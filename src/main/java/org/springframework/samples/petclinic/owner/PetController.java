@@ -121,7 +121,7 @@ class PetController {
 
 		owner.addPet(pet);
 		this.owners.save(owner);
-		redirectAttributes.addFlashAttribute("message", "Pet Added Successfully!");
+		redirectAttributes.addFlashAttribute("message", "Pet successfully added!");
 		return "redirect:/owners/{ownerId}";
 	}
 
